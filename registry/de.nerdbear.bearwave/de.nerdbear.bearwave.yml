@@ -6,13 +6,18 @@ command: bearwave
 separate-locales: false
 build-options: {no-debuginfo: true}
 finish-args:
+  # Radio Browser, internet streams and artwork lookup are core features.
   - --share=network
+  # Qt desktop integration and hardware-accelerated rendering.
   - --share=ipc
   - --socket=wayland
   - --socket=fallback-x11
   - --device=dri
+  # Playback through PulseAudio, including PipeWire's compatibility server.
   - --socket=pulseaudio
+  # Media keys and desktop now-playing controls through MPRIS.
   - --own-name=org.mpris.MediaPlayer2.bearwave
+  # Tray integration and track-change notifications.
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=org.freedesktop.Notifications
 modules:

@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop-application"><id>de.nerdbear.bearwave</id><metadata_license>CC0-1.0</metadata_license><project_license>GPL-3.0-or-later</project_license><name>BearWave</name><summary>Desktop internet radio player for Linux</summary><description><p>BearWave is a Qt 6 desktop internet radio player with station browsing, playback controls, favorites, resume support, MPRIS, and tray integration.</p><p>This community package installs BearWave's unmodified official Linux release from GitHub at install time.</p></description><launchable type="desktop-id">de.nerdbear.bearwave.desktop</launchable><url type="homepage">https://github.com/spalencsar/bearwave</url><url type="bugtracker">https://github.com/spalencsar/bearwave/issues</url><developer id="de.nerdbear"><name>Sebastian Palencsar</name></developer><content_rating type="oars-1.1"/><provides><binary>bearwave</binary></provides><releases><release version="1.3.2" date="2026-11-10"><description><p>Initial FlatPark package using the official BearWave Linux runtime payload.</p></description></release></releases></component>
+<component type="desktop-application">
+  <id>de.nerdbear.bearwave</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>BearWave</name>
+  <summary>Desktop internet radio app for Linux</summary>
+  <description>
+    <p>BearWave is a Qt 6 desktop internet radio player for fast station browsing, simple playback controls, favorites, resume support, and tray behavior without turning into a heavy media suite.</p>
+    <p>This community package installs BearWave's unmodified official Linux release from GitHub at install time.</p>
+    <ul><li>Internet radio via Radio Browser with local JSON caching</li><li>Favorites and manually added streams with local persistence</li><li>Now Playing artwork, track metadata, MPRIS, tray integration, and notifications</li><li>German, Dutch, and Russian translations with localized country names</li></ul>
+  </description>
+  <launchable type="desktop-id">de.nerdbear.bearwave.desktop</launchable>
+  <screenshots>
+    <screenshot type="default"><image>https://raw.githubusercontent.com/spalencsar/bearwave/main/screenshots/screen01.png</image><caption>Main window with station list, details, and player controls</caption></screenshot>
+    <screenshot><image>https://raw.githubusercontent.com/spalencsar/bearwave/main/screenshots/screen02.png</image><caption>World browser with localized country names</caption></screenshot>
+    <screenshot><image>https://raw.githubusercontent.com/spalencsar/bearwave/main/screenshots/screen03.png</image><caption>Search results with active playback</caption></screenshot>
+    <screenshot><image>https://raw.githubusercontent.com/spalencsar/bearwave/main/screenshots/screen04.png</image><caption>Favorites with station details</caption></screenshot>
+    <screenshot><image>https://raw.githubusercontent.com/spalencsar/bearwave/main/screenshots/screen05.png</image><caption>Manual station dialog</caption></screenshot>
+    <screenshot><image>https://raw.githubusercontent.com/spalencsar/bearwave/main/screenshots/screen06.png</image><caption>About dialog with language selection and release notes</caption></screenshot>
+  </screenshots>
+  <url type="homepage">https://www.bearwave.app</url>
+  <url type="bugtracker">https://github.com/spalencsar/bearwave/issues</url>
+  <url type="vcs-browser">https://github.com/spalencsar/bearwave</url>
+  <developer id="de.nerdbear"><name>Sebastian Palencsar</name></developer>
+  <content_rating type="oars-1.1"/>
+  <provides><binary>bearwave</binary></provides>
+  <releases><release version="1.3.2" date="2026-11-10"><description><ul><li>Initial FlatPark package using the official BearWave Linux runtime payload</li></ul></description></release></releases>
+</component>
